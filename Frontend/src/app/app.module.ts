@@ -3,14 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material';
 import { DataService } from './data.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './speichern/home.component';
 import { AboutComponent } from './schreiben/about.component';
-
+import { MaterialModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -23,9 +21,10 @@ import { AboutComponent } from './schreiben/about.component';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
+    MaterialModule,        
     MatDatepickerModule,
-    MatNativeDateModule,
-    
+    MatNativeDateModule,           
+    FormsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
