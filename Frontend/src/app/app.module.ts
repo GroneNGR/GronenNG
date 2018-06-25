@@ -8,7 +8,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './speichern/home.component';
 import { AboutComponent } from './schreiben/about.component';
-import { MaterialModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
+import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
+import { MatFormFieldModule } from '@angular/material';
+import { MatInputModule } from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -20,11 +23,11 @@ import { MaterialModule, MatDatepickerModule, MatNativeDateModule } from '@angul
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule,
-    MaterialModule,        
+    BrowserAnimationsModule,        
     MatDatepickerModule,
     MatNativeDateModule,           
-    FormsModule
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
